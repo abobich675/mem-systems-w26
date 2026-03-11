@@ -55,7 +55,7 @@ CXLDM-Sim is a Gem5 based platform capable of full-system, single host emulation
 
 ## Setup
 To perform the memory intensive simulations of CXLDM-Sim, we leased a cloud computing node from chameleoncloud.org with 2 Intel Xeon Gold 6240R CPUs and 192GB RAM. Within the SimCXL Gem5 code, we configured a full-system simulation with 3GB on-chip DRR4 and 8GB CXL memory expansion.
-![Chameleon](./chameleon.png)
+![Chameleon](./chameleon_logo.png)
 
 ## Challenges
 Due to the novel nature of CXL technologies and their support on modern Linux kernels we were unable to get the Gem5 VM to recognize the emulated 8GB of CXL memory. Due to this, we were unable to run any CXL related simulations. This was a huge setback, but we were still able to conduct the DRAM tests that the paper used as benchmarks for their CXL results.
@@ -87,4 +87,5 @@ Our project was a success in terms of technical learning and baseline data colle
 
 # Division Of Responsibilities
 QEMU Emulation - Mykyta Synytsia
+
 CXLDM-Sim - James Tappert
