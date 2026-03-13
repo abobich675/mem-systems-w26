@@ -1,5 +1,5 @@
 +++
-title = "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference"M
+title = "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference"
 
 [[extra.authors]]
 name = "Nat Rurka (Presentor & Blogger)"
