@@ -2,7 +2,7 @@
 title = "PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference"
 
 [[extra.authors]]
-name = "Nat Rurka (Presentor & Blogger)"
+name = "Nat Rurka (Presenter & Blogger)"
 
 [[extra.authors]]
 name = " Adam Bobich (Blogger)" 
@@ -27,7 +27,7 @@ name = "Shubhangi Pandey"
 
 ## Carbon Footprint of Inference
 
-According to a 2022 paper from Meta[1], the carbon footprint of inference is about two times as great as that of training a model, which is part of why this paper focuses so heavily on the inference phase.
+According to a 2022 paper from Meta[[1]](https://proceedings.mlsys.org/paper_files/paper/2022/file/462211f67c7d858f663355eff93b745e-Paper.pdf), the carbon footprint of inference is about two times as great as that of training a model, which is part of why this paper focuses so heavily on the inference phase.
 
 ## Rising Inference Costs
 
@@ -69,9 +69,9 @@ CENT supports three mapping strategies to distribute LLMs across devices:
 
 # Evaluation
 
-For evaluation of performance, the CENT team utilized a workload mapper for LLM inference, which were broken down into CENT’s custom instructions, then fed into a trace generator, which  were then further broken down to be compatible with Ramulator 2.0[2]’s instructions. Ramulator 2.0 was used for cycle accurate simulation, and then at last, CXL communication latencies were applied to give a more realistic result of processing time and performance.
+For evaluation of performance, the CENT team utilized a workload mapper for LLM inference, which were broken down into CENT’s custom instructions, then fed into a trace generator, which  were then further broken down to be compatible with Ramulator 2.0[[2]](https://people.inf.ethz.ch/omutlu/pub/Ramulator2_arxiv23.pdf)’s instructions. Ramulator 2.0 was used for cycle accurate simulation, and then at last, CXL communication latencies were applied to give a more realistic result of processing time and performance.
 
-For power modeling, they utilized Micron’s DRAM Power Model[3] which provided relatively accurate expected wattage for their system.
+For power modeling, they utilized Micron’s DRAM Power Model[[3]](https://www.micron.com/sales-support/design-tools/dram-power-calculator) which provided relatively accurate expected wattage for their system.
 
 When it comes to cost evaluation, they predicted that the cost of PIM DRAM will be about 10x as high as standard DRAM based on UPMEM, a form of PIM DRAM based on DDR4, combined with the nonrecurrent engineering costs of a custom design, the die manufacturing cost, and packaging cost.
 
